@@ -7,4 +7,4 @@ redirect_from:
   - /resume
 ---
 
-Check my [CV](https://github.com/XiaoyongNI/XiaoyongNI.github.io/blob/master/files/Resume.pdf).
+Check my [CV](./Resume.pdf).
