@@ -35,7 +35,7 @@ layout: default
         {% endif %}
         
         {% if page.collection == 'teaching' %}
-          <p>{% if page.student %}{{ page.student }}, {% endif %}{% if page.period %}{{ page.period }}{% else %}{{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }}{% endif %}</p>
+          <p>{% if page.student %}{{ page.student }}{% endif %}{% if page.student and page.period %}, {% endif %}{% if page.period %}{{ page.period }}{% elsif page.type %}{{ page.type }}{% endif %}</p>
         {% elsif page.collection == 'publications' and page.venue %}
           <p>Published in <i>{{ page.venue }}</i></p>
         {% elsif page.venue and page.date %}

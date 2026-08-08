@@ -41,7 +41,7 @@
     {% assign publication_citation = post.authors | default: post.citation %}
 
         {% if post.collection == 'teaching' %}
-          <p>{% if post.student %}{{ post.student }}, {% endif %}{% if post.period %}{{ post.period }}{% else %}{{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}{% endif %}</p>
+          <p>{% if post.student %}{{ post.student }}{% endif %}{% if post.student and post.period %}, {% endif %}{% if post.period %}{{ post.period }}{% elsif post.type %}{{ post.type }}{% endif %}</p>
         {% elsif post.collection == 'publications' %}
           <p>Published in <i>{{ post.venue }}</i></p>
         {% elsif post.date %}
