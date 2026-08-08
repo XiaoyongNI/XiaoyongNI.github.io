@@ -7,5 +7,6 @@ redirect_from:
   - /about.html
 ---
 
-I'm a PhD student at [Integrated Neurotechnologies Lab](https://www.epfl.ch/labs/inl/), EPFL. My research interest includes signal processing, machine learning, brain-machine interface and treatment of neurological disorders.
+I'm a PhD student at [Integrated Neurotechnologies Lab](https://www.epfl.ch/labs/inl/), EPFL. My research interests focus on **neural signal denoising and decoding for brain–machine interfaces**, with applications in epilepsy, Parkinson’s disease, and motor function restoration.
+
 
