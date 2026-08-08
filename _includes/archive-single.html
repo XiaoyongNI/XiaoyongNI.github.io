@@ -38,6 +38,8 @@
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
 
+    {% assign publication_citation = post.authors | default: post.citation %}
+
         {% if post.collection == 'teaching' %}
           <p>{% if post.student %}{{ post.student }}, {% endif %}{% if post.period %}{{ post.period }}{% else %}{{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}{% endif %}</p>
         {% elsif post.collection == 'publications' %}
@@ -52,14 +54,14 @@
     <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
     {% endif %}
     
-    {% if post.citation and post.paperurl and post.slidesurl %}
-      <p>Recommended citation: {{ post.citation }}{% if post.presentation %}<br />{{ post.presentation }}{% endif %}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a></p>
-    {% elsif post.citation and post.paperurl %}
-      <p>Recommended citation: {{ post.citation }}{% if post.presentation %}<br />{{ post.presentation }}{% endif %}<br /><a href="{{ post.paperurl }}">Download Paper</a></p>
-    {% elsif post.citation and post.slidesurl %}
-      <p>Recommended citation: {{ post.citation }}{% if post.presentation %}<br />{{ post.presentation }}{% endif %}<br /><a href="{{ post.slidesurl }}">Download Slides</a></p>
-    {% elsif post.citation %}
-      <p>Recommended citation: {{ post.citation }}{% if post.presentation %}<br />{{ post.presentation }}{% endif %}</p>
+    {% if publication_citation and post.paperurl and post.slidesurl %}
+      <p>Authors: {{ publication_citation }}{% if post.presentation %}<br />{{ post.presentation }}{% endif %}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a></p>
+    {% elsif publication_citation and post.paperurl %}
+      <p>Authors: {{ publication_citation }}{% if post.presentation %}<br />{{ post.presentation }}{% endif %}<br /><a href="{{ post.paperurl }}">Download Paper</a></p>
+    {% elsif publication_citation and post.slidesurl %}
+      <p>Authors: {{ publication_citation }}{% if post.presentation %}<br />{{ post.presentation }}{% endif %}<br /><a href="{{ post.slidesurl }}">Download Slides</a></p>
+    {% elsif publication_citation %}
+      <p>Authors: {{ publication_citation }}{% if post.presentation %}<br />{{ post.presentation }}{% endif %}</p>
     {% elsif post.paperurl %}
       <p><a href=" {{ post.paperurl }} ">Download Paper</a></p>
     {% elsif post.slidesurl %}
