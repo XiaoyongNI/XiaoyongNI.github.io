@@ -1,0 +1,53 @@
+# Publication list rendered on /publications/ (newest first).
+# Use <b>X. Ni</b> to highlight me; add "*" for corresponding author.
+# Optional fields: note (bold highlight), code, paper.
+
+- venue: "Under review, IEEE TBME"
+  title: "Real-time Stimulation Artifact Cancellation via Differential Artifact Subspace Tracking"
+  authors: "<b>X. Ni</b>, O. Etesami, D. Alex, M. Shoaran"
+
+- venue: "Under review, IEEE TBME"
+  title: "FND: A Meta-Evaluation Framework for Reliable Assessment of Neural Signal Denoising"
+  authors: "<b>X. Ni</b>, T. Zhu, M. Shoaran"
+
+- venue: "EMBC 2026, Oral"
+  title: "Physics Constraints and Expert Regularization for Unsupervised Stimulation Artifact Removal"
+  authors: "T. H. Bui, <b>X. Ni*</b>, M. Shoaran"
+  code: "https://github.com/spbui00/pulse"
+
+- venue: "EMBC 2026, Oral"
+  title: "iNeuroTune: Interpretable Neural Data Selection for Unsupervised Decoder Fine-Tuning"
+  authors: "A. Wisniewska, <b>X. Ni*</b>, M. Shoaran"
+
+- venue: "NeurIPS 2024"
+  title: "Exploring the Trade-off Between Deep-Learning and Explainable Models for Brain-Machine Interfaces"
+  authors: "L. H. Cubillos, G. Revach, M. J. Mender, et al. (incl. <b>X. Ni</b>)"
+
+- venue: "ICASSP 2024"
+  title: "Adaptive KalmanNet: Data-Driven Kalman Filter with Fast Adaptation"
+  authors: "<b>X. Ni</b>, G. Revach, N. Shlezinger"
+  code: "https://github.com/KalmanNet/Adaptive-KNet-ICASSP24"
+
+- venue: "IEEE TSP 2023"
+  title: "RTSNet: Learning to Smooth in Partially Known State-Space Models"
+  authors: "G. Revach, <b>X. Ni</b>, N. Shlezinger, R. J. G. van Sloun, Y. C. Eldar"
+  code: "https://github.com/KalmanNet/RTSNet_TSP"
+
+- venue: "ICASSP 2022"
+  title: "RTSNet: Deep Learning Aided Kalman Smoothing"
+  authors: "<b>X. Ni</b>, G. Revach, N. Shlezinger, R. J. G. van Sloun, Y. C. Eldar"
+  code: "https://github.com/KalmanNet/RTSNet_ICASSP22"
+
+- venue: "IEEE TSP 2022"
+  title: "KalmanNet: Neural Network Aided Kalman Filtering for Partially Known Dynamics"
+  authors: "G. Revach, N. Shlezinger, <b>X. Ni</b>, A. L. Escoriza, R. J. G. van Sloun, Y. C. Eldar"
+  note: "IEEE SPS Best Paper Award nomination; 870+ citations."
+  code: "https://github.com/KalmanNet/KalmanNet_TSP"
+
+- venue: "EUSIPCO 2022"
+  title: "Unsupervised Learned Kalman Filtering"
+  authors: "G. Revach, N. Shlezinger, T. Locher, <b>X. Ni</b>, R. J. G. van Sloun, Y. C. Eldar"
+
+- venue: "IEEE MASS 2019"
+  title: "Age of Information for Wireless Energy Harvesting Secondary Users in Cognitive Radio Networks"
+  authors: "S. Leng, <b>X. Ni</b>, A. Yener"

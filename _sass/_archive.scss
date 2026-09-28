@@ -243,3 +243,20 @@
     }
   }
 }
+
+/*
+   Publication list (resume style)
+   ========================================================================== */
+
+.pub-legend {
+  margin-bottom: 0.75em;
+}
+
+.pub-list {
+  padding-left: 1.2em;
+
+  li {
+    margin-bottom: 0.6em;
+    line-height: 1.5;
+  }
+}
